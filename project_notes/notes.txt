@@ -1,0 +1,41 @@
+Sabse pehle Database setup krna pdega uske liye:- 
+
+npm packeges  ko download krna he :-
+
+npm init -y
+npm i express
+npm i ejs
+npm i mongoose
+
+fir ek app.js file create krenge usi se sara kaam hoga 
+
+uske baad jitna v packages install kiye sare require krenge :-
+---------------------------------------
+const express = require("express");
+const app = express();
+const port = 3000;
+const mongoose = require("mongoose");
+
+
+app.get("/",(req,res) =>{
+    res.send("Hii i am root");
+})
+
+
+app.listen(port,() =>{
+    console.log(`Server is Listening on port :${port}`);
+})
+-----------------------------------------
+
+const MONGO_URL = 'mongodb://127.0.0.1:27017/wanderlust'
+
+
+main().then(()=>{                                   //Data base connect hojyega lekin models create krna pdega
+    console.log("DB is Connected");
+}).catch(err => console.log(err));
+
+
+async function main() {
+  await mongoose.connect(MONGO_URL);
+}
+_________________________________________________________________________
