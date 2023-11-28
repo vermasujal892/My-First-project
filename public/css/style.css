@@ -10,7 +10,9 @@ body {
 
 .navbar {
   /* height: 5rem; */
-  background-color: white;
+  background-color: rgb(202, 202, 202);
+  
+
 }
 .fa-compass {
   color: #ff385c;
@@ -50,14 +52,16 @@ body {
 .listing-card {
   border: none !important;
   margin-bottom: 2rem;
+  
 }
 .card-img-top {
   border-radius: 1rem !important;
   width: 100% !important;
   object-fit: cover;
-  /* box-shadow: 6px 8px 8px black; */
+  box-shadow: 6px 8px 8px black;
 }
 .card-body {
+  margin-top: 1rem;
   padding: 0 !important;
 }
 .card-text p {
@@ -138,3 +142,4 @@ width: 100px;
     display: none;
   }
 }
+
