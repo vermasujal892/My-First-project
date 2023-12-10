@@ -143,3 +143,11 @@ width: 100px;
   }
 }
 
+.card-img-overlay {
+  opacity: 1 ;
+}
+
+.card-img-overlay i{
+ font-size: 1.6rem;
+ padding-left: 17rem;
+}
